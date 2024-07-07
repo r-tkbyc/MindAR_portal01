@@ -13,25 +13,10 @@
       }
     });
   </script>
-
-  <style>
-    p {
-      position: absolute;
-      bottom: 1rem;
-      left: 50%;
-      transform: translateX(-50%);
-      background-color: #eee;
-      color: #333;
-      padding: 0.5rem 0.8rem;
-      border: 0;
-      border-radius: 0.3rem;
-      margin: 0.5rem;
-    }
-  </style>
 </head>
 
 <body>
-  <a-scene mindar-image="imageTargetSrc: https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.2.5/examples/image-tracking/assets/card-example/card.mind;" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
+  <a-scene mindar-image="filterMinCF:0.001; filterBeta: 0.01; imageTargetSrc: https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.2.5/examples/image-tracking/assets/card-example/card.mind;" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
     <a-assets>
       <img id="sky" src="image/golden_bay_2k.jpg">
       <img id="card" src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.2.5/examples/image-tracking/assets/card-example/card.png">
@@ -59,7 +44,7 @@
         
       <!-- <a-sky src="#sky" scale="0.0005 0.0005 0.0005" position="0 0 0"></a-sky> -->
     </a-entity>
+    <a-text style="color: #f00">Ver1.4.1</a-text>
   </a-scene>
-  <p>ver1.4</p>
 </body>
 </html>
