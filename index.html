@@ -1,18 +1,17 @@
 <html>
-
 <head>
-  <meta charset="utf-8" />
-  <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-image-aframe.prod.js"></script>
 
   <script>
-  AFRAME.registerComponent('hider-material', {
-    init: function () {
-      const material = this.el.getObject3D('mesh').material;
-      material.colorWrite = false;
-      console.log(material);
-    }
-  });
+    AFRAME.registerComponent('hider-material', {
+      init: function () {
+        const material = this.el.getObject3D('mesh').material;
+        material.colorWrite = false;
+        console.log(material);
+      }
+    });
   </script>
 
   <style>
@@ -63,5 +62,4 @@
   </a-scene>
   <p>ver1.4</p>
 </body>
-
 </html>
